@@ -26,14 +26,20 @@ O objetivo do pacote é pegar as cores do insper
 devtools::install_github("padsInsper/coresInsper")
 ```
 
-## Exemplo
+## Todas as cores
 
-This is a basic example which shows you how to solve a common problem:
+```{r}
+library(coresInsper)
+scales::show_col(cores_insper(15))
+```
 
 ```{r example}
-library(coresInsper)
 cores_insper(10)
 ```
+
+## Exemplos
+
+Exemplos de gráfico
 
 ```{r}
 colorspace::demoplot(cores_insper(15))
@@ -50,3 +56,5 @@ colorspace::demoplot(cores_insper(5), "scatter")
 ```{r}
 colorspace::demoplot(cores_insper(15)[1:15 %% 3 == 0], "bar")
 ```
+
+
