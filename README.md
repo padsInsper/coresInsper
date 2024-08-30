@@ -18,15 +18,15 @@ devtools::install_github("padsInsper/coresInsper")
 
 ``` r
 library(coresInsper)
-scales::show_col(cores_insper(15))
+scales::show_col(cores_insper())
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
 ``` r
 cores_insper(10)
-#>  [1] "#414042" "#BCBEC0" "#E6E7E8" "#C4161C" "#E80724" "#F69679" "#F15A22"
-#>  [8] "#F58220" "#FAA61A" "#A62B4D"
+#>  [1] "#000000" "#FFFFFF" "#E50505" "#3F3F3F" "#595959" "#808080" "#ABABAB"
+#>  [8] "#DCDCDC" "#620068" "#CB8BDF"
 ```
 
 ## Exemplos

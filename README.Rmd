@@ -29,8 +29,10 @@ devtools::install_github("padsInsper/coresInsper")
 ## Todas as cores
 
 ```{r}
+#| fig.width: 6
+#| fig.height: 6
 library(coresInsper)
-scales::show_col(cores_insper(15))
+scales::show_col(cores_insper())
 ```
 
 ```{r example}
@@ -42,19 +44,19 @@ cores_insper(10)
 Exemplos de gráfico
 
 ```{r}
-colorspace::demoplot(cores_insper(15))
+colorspace::demoplot(cores_insper(35))
 ```
 
 ```{r}
-colorspace::demoplot(cores_insper(15), "heatmap")
+colorspace::demoplot(cores_insper(35), "heatmap")
 ```
 
 ```{r}
-colorspace::demoplot(cores_insper(5), "scatter")
+colorspace::demoplot(cores_insper(4), "scatter")
 ```
 
 ```{r}
-colorspace::demoplot(cores_insper(15)[1:15 %% 3 == 0], "bar")
+colorspace::demoplot(cores_insper(35)[1:35 %% 5 == 2], "bar")
 ```
 
 
